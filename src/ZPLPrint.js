@@ -29,12 +29,12 @@ const sendZPLforPrinter = async (
       const result = await executePrint(CUPSUrl, configs)
 
       printerLog('Job submitted uccessfully')
-      return { success: result }
+      return { success: true }
 
     } catch (err) {
 
       printerLog('ERROR: The job was submitted, but an error occurred')
-      return { success: err }
+      return { success: false }
 
     }
 

@@ -32,7 +32,7 @@ log('Loading routes...')
 
 app.post('/print' , async (req, res) => {
 
-  await sendZPLforPrinter(
+  const result = await sendZPLforPrinter(
     req.body.ZPLCodeArray,
     req.body.CUPSUrl,
     req.body.userName,
@@ -40,7 +40,8 @@ app.post('/print' , async (req, res) => {
     req.body.jobId,
   )
 
-  res.json({ok: 'ok'})
+  res.status(201)
+  res.json(result)
 })
 
 /**
