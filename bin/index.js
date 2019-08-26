@@ -14,6 +14,6 @@ if (program.port) {
   const result = startServer(program.port)
   console.log(result)
 } else {
-  const result = startServer(3000)
+  const result = startServer()
   console.log(result)
 }
