@@ -32,10 +32,30 @@ $ [sudo] yarn add global valle-print-cli
 $ valle
 ```
 
-### Choose a custom port
+### Command Line Usage
+
+*Start local API.*
 
 ```
-$ valle -p 3001
+$ valle
+```
+
+*Start local API with custom PORT.*
+
+```
+$ valle -p <port>
+```
+
+*Show the project version.*
+
+```
+$ valle --version
+```
+
+*Show all available commands.*
+
+```
+$ valle --help
 ```
 
 ## Start using the npm scripts (For PM2)
