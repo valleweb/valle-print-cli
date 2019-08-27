@@ -89,7 +89,7 @@ Configure your custom port creating a `.env` file following the [.env.example](.
 | Method | Endpoint | Description |
 | :------------ | :------------ | :----------- |
 | `GET`  | `/` | Instructions page.
-| `POST` | `/` | API for print.
+| `POST` | `/print` | API for print.
 
 **POST:** /
 
