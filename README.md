@@ -23,7 +23,7 @@ $ [sudo] npm install -g valle-print-cli
 or
 
 ```
-$ [sudo] yarn add global valle-print-cli
+$ [sudo] yarn global add valle-print-cli
 ```
 
 ### Run
